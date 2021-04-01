@@ -63,6 +63,17 @@ const webpackConfig = {
         ],
       },
       {
+        test: /\.js$/,
+        use: [
+          {
+            loader: "babel-loader",
+            options: {
+              
+            },
+          },
+        ],
+      },
+      {
         test: /\.vue$/,
         loader: "vue-loader",
         options: {
